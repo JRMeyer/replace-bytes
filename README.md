@@ -1,5 +1,6 @@
 
-## USAGE
+## Usage
+
 
 ### Read and Write to files on disk
 
@@ -13,7 +14,9 @@ $ ./replace-bytes.sh NUM_BYTES INFILE OUTFILE
 $ cat INFILE | ./replace-bytes.sh NUM_BYTES > OUTFILE
 ```
 
-## READING FROM STDIN / STDOUT
+## Examples
+
+### I/O == STDIN / STDOUT
 
 Normal 1-byte or ASCII file:
 
@@ -51,7 +54,7 @@ josh@carbon:~$ cat foo | ./replace-bytes.sh 4
 㐭㐹㐼 㐮㐜㐯㐸㐱㐭 㐜㐌㐳 㐌㐵㐮㐲 㐱㐯㐸㐳㐭 㐲㐬㐭 㐭㐲 (1) 㐮㐭㐽㐲㐬㐭 㐲㐯 (2) 㐌 㐻㐸㐵㐼 㐮㐬㐱㐱㐵㐸㐼㐽 㐌㐭 㐭㐹㐼 㐜㐵㐸
 ```
 
-## READING AND WRITING TO FILE
+### I/O == Filestream
 
 Normal 1-byte or ASCII file:
 
